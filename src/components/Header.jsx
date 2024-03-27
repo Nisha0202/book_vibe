@@ -12,7 +12,7 @@ export default function () {
 
     return (
 
-        <div className="navbar bg-base-100 px-0 md:py-4 py-6 flex flex-col md:flex-row md:items-center justify-between">
+        <div className="navbar bg-base-100 px-0 md:py-4 py-6 flex flex-col md:flex-row md:items-center justify-between lexend">
             <div className="">
                 <NavLink to="/" className="text-base md:text-xl font-bold text-indigo-600">Book Vibe</NavLink>
             </div>
@@ -23,8 +23,8 @@ export default function () {
             </div>
             <div className='md:flex hidden'>
                 <ul className="p-2 md:flex gap-4">
-                    <button className='btn py-1 bg-emerald-500  text-white'>Sign Up</button>
-                    <button className='btn py-1 bg-blue-500 text-white'>Log In</button>
+                    <button className='btn py-1 bg-emerald-500  text-white'>Sign In</button>
+                    <button className='btn py-1 bg-blue-500 text-white'>Sign Up</button>
                 </ul>
             </div>
 

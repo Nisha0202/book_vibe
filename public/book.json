@@ -1,0 +1,91 @@
+{
+  "books": [
+    {
+      "bookId": 1,
+      "bookName": "The Silent Witness",
+      "author": "Emily Collins",
+      "image": "https://i.pinimg.com/564x/b3/5a/b2/b35ab28ebabe71997c329b02bbaacf83.jpg",
+      "review": "A gripping psychological thriller that keeps you guessing until the very end. The Silent Witness follows Detective Sarah Adams as she investigates a series of mysterious deaths in a small coastal town. The author masterfully weaves suspense, unexpected twists, and complex characters into a page-turner that will leave readers breathless. Collins' vivid descriptions of the eerie landscape and the haunting secrets hidden within the community add to the overall sense of unease. With its well-crafted plot and memorable characters, this novel is a must-read for fans of psychological suspense.",
+      "totalPages": 320,
+      "rating": 4.5,
+      "category": "Mystery",
+      "tags": ["Suspense", "Psychological"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 2022
+    },
+    {
+      "bookId": 2,
+      "bookName": "Echoes of the Past",
+      "author": "David Mitchell",
+      "image": "https://i.pinimg.com/564x/ed/3b/91/ed3b91114b53a824e46978cf47535bd3.jpg",
+      "review": "A beautifully written historical novel that transports you to another era. Echoes of the Past chronicles the intertwined lives of three generations during World War II. Mitchell's lyrical prose captures the essence of love, loss, and resilience. The vivid settings, from war-torn Europe to a remote countryside estate, come alive on the pages. The characters' struggles and triumphs resonate deeply, making this a poignant and unforgettable read. Whether you're a history enthusiast or simply appreciate exquisite storytelling, this book will leave a lasting impression.",
+      "totalPages": 400,
+      "rating": 4.2,
+      "category": "Historical Fiction",
+      "tags": ["Drama", "Family Saga"],
+      "publisher": "Penguin Books",
+      "yearOfPublishing": 2019
+    },
+    {
+      "bookId": 3,
+      "bookName": "The Quantum Paradox",
+      "author": "Alex Turner",
+      "image": "https://i.pinimg.com/564x/a3/c0/58/a3c0585b0ee81bec54efabf8344b44bc.jpg",
+      "review": "A mind-bending exploration of quantum physics and its philosophical implications. The Quantum Paradox delves into the mysteries of the subatomic world, challenging our understanding of reality. Turner seamlessly combines scientific concepts with thought-provoking scenarios, blurring the lines between science fiction and scientific inquiry. From entangled particles to parallel universes, this book takes readers on a thrilling intellectual journey. Prepare to question everything you thought you knew about existence. A must-read for curious minds.",
+      "totalPages": 280,
+      "rating": 4.8,
+      "category": "Science",
+      "tags": ["Physics", "Philosophy"],
+      "publisher": "MIT Press",
+      "yearOfPublishing": 2023
+    },
+    {
+      "bookId": 4,
+      "bookName": "Lost in Translation",
+      "author": "Sophia Lee",
+      "image": "https://i.pinimg.com/736x/b2/c9/54/b2c954d3685d49634f1cd21824a7cdd2.jpg",
+      "review": "A heartwarming tale of love and cultural differences. Lost in Translation follows Mei, a young translator navigating life in a foreign country. Lee skillfully portrays the challenges of language barriers, identity, and unexpected connections. The blossoming romance between Mei and Hiro, a local artist, unfolds against the backdrop of bustling Tokyo. Lee's evocative prose captures the sensory details of the city—the aroma of street food, the neon-lit streets, and the quiet moments of introspection. This novel celebrates the beauty of human connection across borders.",
+      "totalPages": 250,
+      "rating": 4.0,
+      "category": "Romance",
+      "tags": ["Multicultural", "Contemporary"],
+      "publisher": "Random House",
+      "yearOfPublishing": 2021
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Enigma Code",
+      "author": "Sophie Adams",
+      "image": "https://i.pinimg.com/564x/21/e6/e7/21e6e7eb58dc82785b337a3ada5d2ca2.jpg",
+      "review": "An electrifying espionage thriller set during World War II. The Enigma Code follows British cryptanalyst Alice Sinclair as she races against time to crack the Nazis' secret code. Adams skillfully combines historical accuracy with heart-pounding suspense. The intricate web of spies, double agents, and hidden agendas keeps readers guessing until the final page. With its vivid descriptions of war-torn London and the high-stakes battle of wits, this novel is a must-read for fans of historical fiction and espionage.",
+      "totalPages": 400,
+      "rating": 4.4,
+      "category": "Espionage",
+      "tags": ["Historical", "Thriller"],
+      "publisher": "Simon & Schuster",
+      "yearOfPublishing": 2020
+    },
+    {
+      "bookId": 6,
+      "bookName": "The Midnight Library",
+      "author": "Matt Haig",
+      "image": "https://i.pinimg.com/564x/69/6e/71/696e71a429c975007d07606fa68114e6.jpg",
+      "review": "A thought-provoking exploration of regrets and second chances. The Midnight Library follows Nora Seed, who finds herself in a mysterious library between life and death. Each book on the shelves represents a different life she could have lived. Haig's lyrical prose invites readers to contemplate their own choices and the paths not taken. As Nora navigates these alternate realities, she grapples with existential questions and the pursuit of happiness. This novel is a poignant reminder that every decision shapes our journey, and sometimes the most unexpected detours lead to profound discoveries.",
+      "totalPages": 320,
+      "rating": 4.7,
+      "category": "Contemporary Fiction",
+      "tags": ["Philosophical", "Fantasy"],
+      "publisher": "Viking",
+      "yearOfPublishing": 2020
+    }
+    
+
+
+
+
+
+
+
+  ]    
+
+}

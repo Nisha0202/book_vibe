@@ -29,14 +29,14 @@ const router = createBrowserRouter([
         element: <Pages />,
       },
       {
-        path: "/genre_details/:id",
+        path: "/book_details/:id",
         element: <CardDetails/>,
-        loader: ()=> fetch('../category.json')
+        loader: ()=> fetch('../book.json')
       },
       {
         path: "/bookmark",
         element: <Bookmark/>,
-        loader: ()=> fetch('../category.json')
+        loader: ()=> fetch('../book.json')
        
       },
 
