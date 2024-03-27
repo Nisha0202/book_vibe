@@ -1,0 +1,51 @@
+[
+    {
+        "id":1,
+      "name": "Romance",
+      "icon": "https://i.pinimg.com/736x/90/02/73/90027366293b7f99ed6c576495933f62.jpg",
+      "description": "Experience the joy and heartache of love with these touching romance dramas."
+    },
+    {
+        "id":2,
+      "name": "Comedy",
+      "icon": "https://i.pinimg.com/564x/b0/50/c8/b050c8b622be12e9a8234f95e9565446.jpg",
+      "description": "Laugh out loud with these hilarious comedy dramas that are sure to tickle your funny bone."
+    },
+    {
+        "id":3,
+      "name": "Thriller",
+      "icon": "https://i.pinimg.com/564x/9e/25/a8/9e25a83f33ba64e44e57068ebe4b6bdf.jpg",
+      "description": "Get your heart racing with these intense thriller dramas that will keep you on the edge of your seat."
+    },
+    {
+        "id":4,
+      "name": "Fantasy",
+      "icon": "https://i.pinimg.com/564x/b7/54/88/b75488e4d66c1ed2469e6fae779d55be.jpg",
+      "description": "Escape to another world with these imaginative fantasy dramas that take you on extraordinary adventures."
+    },
+    {
+      "id":5,
+      "name": "Action",
+      "icon": "https://i.pinimg.com/564x/42/c0/c2/42c0c2db53ec7dfc90ceebb3e7547526.jpg",
+      "description": "Get your adrenaline pumping with these action-packed dramas that will keep you hooked."
+  },
+  {
+      "id":6,
+      "name": "Horror",
+      "icon": "https://i.pinimg.com/564x/2c/09/51/2c09517508deced27279cdd9d1785158.jpg",
+      "description": "Experience the thrill and fear with these spine-chilling horror dramas that will keep you up at night."
+  },
+  {
+      "id":7,
+      "name": "Sci-Fi",
+      "icon": "https://i.pinimg.com/564x/0c/7a/02/0c7a02422a8f2a5632346115be343294.jpg",
+      "description": "Explore the unknown and imagine the impossible with these captivating sci-fi dramas."
+  },
+  {
+      "id":8,
+      "name": "Mystery",
+      "icon": "https://i.pinimg.com/564x/f0/c4/46/f0c446ecfbc46ba8af07bada15b5efbd.jpg",
+      "description": "Unravel the secrets and solve the puzzles with these intriguing mystery dramas that will leave you guessing."
+  }
+  ]
+  

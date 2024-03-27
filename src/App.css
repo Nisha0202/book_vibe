@@ -1,0 +1,56 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.lexend{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+
+  
+}
+
+.inter{
+font-family: "Inter", sans-serif;
+
+}
+
+.playful{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+.container{
+  max-width: 1150px;
+  min-width: 300px;
+  padding: 0px;
+  margin: 0px auto;
+  /* background-color: #f5f5f5; */
+}
+
+.multi-bg {
+  background-image: 
+    url('https://i.pinimg.com/564x/8b/4a/e9/8b4ae90783807c93ea2f73b72f774596.jpg'),
+    url('https://i.pinimg.com/736x/da/5c/8c/da5c8cd9454e30e247e6cf2e4180d0a1.jpg');
+  object-fit: contain;
+  background-position: left, right; /* positions for each image */
+  background-repeat: no-repeat; /* if you want to repeat images, you can change it */
+  background-size: 50% auto; /* sizes for each image */
+  border-radius: 30px;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+}
+
+
+.link-active {
+  color: #10b981; /* Active link color */
+  border: 2px solid #10b981;
+  font-weight: bold;
+  
+}
