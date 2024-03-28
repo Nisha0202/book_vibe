@@ -59,3 +59,18 @@
   // }, [book]);
 
   // console.log(book);
+
+//   <div className='custom-shape-bar-chart'>
+//   {fav.map(book => (
+//     <div
+//       key={book.bookId}
+//       className='book-bar'
+//       style={{
+//         width: `${(book.totalPages / maxTotalPages) * 100}%`,
+//         backgroundColor: '#0074D9', // Customize the color
+//       }}
+//     >
+//       {book.bookName} ({book.totalPages} pages)
+//     </div>
+//   ))}
+// </div>  const maxTotalPages = Math.max(...fav.map(book => book.totalPages));

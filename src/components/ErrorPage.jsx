@@ -6,7 +6,7 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page" className="container lexend">
-      <h1>Oops!</h1>
+      <h1 className="text-3xl font-bold">404 Not Found</h1>
       <p>Sorry, an unexpected error has occurred.</p>
       <p>
         <i>{error.statusText || error.message}</i>

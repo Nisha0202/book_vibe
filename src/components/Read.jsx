@@ -12,8 +12,6 @@ export default function Read({ fav }) {
           <img src={book.image} className='w-56 h-60 rounded-xl'></img>
         </div>
 
-
-
         <div className='content'>
           <h1 className='text-xl md:text-2xl font-bold playful'>{book.bookName}</h1>
           <p className='text-gray-600 text-base font-semibold lenend py-4'>By: {book.author}</p>
@@ -41,31 +39,7 @@ export default function Read({ fav }) {
 
 
           </div>
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     </div>
 
       </div>
 

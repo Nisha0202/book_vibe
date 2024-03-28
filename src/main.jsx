@@ -13,7 +13,8 @@ import CardDetails from './components/CardDetails'
 import Bookmark from './pages/Bookmark';
 import Read from './components/Read';
 import Wishlist from './components/Wishlist';
-
+import About from './pages/About';
+import More from './pages/More';
 
 const router = createBrowserRouter([
   {
@@ -26,8 +27,17 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
+        path: "/more",
+        element: <More/>,
+      },
+      {
+        path: "/about",
+        element: <About/>,
+      },
+      {
         path: "/pages",
         element: <Pages />,
+        loader: ()=> fetch('../book.json')
       },
       {
         path: "/book_details/:id",
