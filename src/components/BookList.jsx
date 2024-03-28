@@ -19,7 +19,7 @@ export default function BookList() {
 
 
     return (
-        <div className='md:my-24 my-10 w-full'>
+        <div className='md:my-20 my-10 w-full'>
             <h1 className='playful md:text-4xl text-xl font-bold grid place-items-center'>Books</h1>
 
             <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-8
@@ -31,7 +31,7 @@ export default function BookList() {
                         <div key={book.bookId} className='lexend'>
 
                             <div className="w-full rounded-2xl overflow-hidden border-[1px] border-gray-300 p-5">
-                                <img className='rounded-xl w-full h-[300px] object-cover' src={book.image} alt={book.bookName} />
+                                <img className='rounded-xl w-full h-[300px] object-contain' src={book.image} alt={book.bookName} />
                                 <div className="px-0 py-6 pb-2 flex gap-2">
                                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm text-emerald-500">{book.tags[0]}</span>
                                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm  text-emerald-500 ">{book.tags[1]}</span>

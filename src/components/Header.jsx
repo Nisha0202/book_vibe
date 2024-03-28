@@ -12,11 +12,11 @@ export default function () {
 
     return (
 
-        <div className="navbar bg-base-100 px-0 md:py-4 py-6 flex flex-col md:flex-row md:items-center justify-between lexend">
+        <div className="navbar bg-base-100 px-0 md:pt-4 pt-6 flex flex-col md:flex-row md:items-center md:justify-between lexend">
             <div className="">
                 <NavLink to="/" className="text-base md:text-xl font-bold text-indigo-600">Book Vibe</NavLink>
             </div>
-            <div className="menu menu-horizontal flex gap-2">
+            <div className="menu menu-horizontal flex md:gap-1 gap-0">
                 {Genres}
 
 
