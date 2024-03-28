@@ -26,7 +26,7 @@ export default function BookList() {
             gap-4 mt-8 p-4 md:p-0'>
                 {books.map((book) => (
 
-                    <Link to={`/book_details/${book.bookId}`}>
+                    <Link key={book.bookId} to={`/book_details/${book.bookId}`}>
                    
                         <div key={book.bookId} className='lexend'>
 

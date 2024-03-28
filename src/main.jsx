@@ -11,7 +11,8 @@ import Pages from './pages/Pages';
 import ErrorPage from './components/ErrorPage';
 import CardDetails from './components/CardDetails'
 import Bookmark from './pages/Bookmark';
-
+import Read from './components/Read';
+import Wishlist from './components/Wishlist';
 
 
 const router = createBrowserRouter([
@@ -36,8 +37,17 @@ const router = createBrowserRouter([
       {
         path: "/bookmark",
         element: <Bookmark/>,
-        loader: ()=> fetch('../book.json')
-       
+        loader: ()=> fetch('../book.json'),
+        children: [
+          {
+            path: "read",
+            element: <Read />
+          },
+          {
+            path: "wishlist",
+            element: <Wishlist />
+          }
+        ]
       },
 
 
