@@ -26,7 +26,7 @@ export default function Bookmark() {
     setDisplay(applied);
   }, [books]);
 
-  console.log(fav);
+
 
   return (
 
@@ -63,12 +63,6 @@ export default function Bookmark() {
           <Route path="wishlist" element={<Wishlist />} />
         </Routes>
       </div>
-
-
-
-  
-
-
 
     </div >);
 }

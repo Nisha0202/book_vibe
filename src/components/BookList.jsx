@@ -31,7 +31,7 @@ export default function BookList() {
                         <div key={book.bookId} className='lexend'>
 
                             <div className="w-full rounded-2xl overflow-hidden border-[1px] border-gray-300 p-5">
-                                <img className='rounded-xl w-full h-[300px] object-contain' src={book.image} alt={book.bookName} />
+                                <img className='rounded-xl w-full h-[300px] object-cover' src={book.image} alt={book.bookName} />
                                 <div className="px-0 py-6 pb-2 flex gap-2">
                                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm text-emerald-500">{book.tags[0]}</span>
                                     <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm  text-emerald-500 ">{book.tags[1]}</span>

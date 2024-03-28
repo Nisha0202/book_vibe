@@ -5,7 +5,7 @@ export default function () {
 
     const Genres = <>
         <li><NavLink to='/'  className={({ isActive }) => (isActive ? "link-active" : "link")}>Home</NavLink></li>
-        <li><NavLink to='/bookmark'  className={({ isActive }) => (isActive ? "link-active" : "link")}>Listed Books</NavLink></li>
+        <li><NavLink to='/bookmark/read'  className={({ isActive }) => (isActive ? "link-active" : "link")}>Listed Books</NavLink></li>
         <li><NavLink to='/pages' className={({ isActive }) => (isActive ? "link-active" : "link")}>Pages to Read</NavLink></li>
         
     </>
