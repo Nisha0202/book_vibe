@@ -22,12 +22,14 @@ export default function Pages() {
   return (
     <div>
       <div className='flex flex-row flex-wrap gap-3'>
-        {fav.map(book => (
-          <div className='text-sm' key={book.bookId}>
-            {book.bookName}
-          </div>
-        ))}
-        <More fav={fav}></More>
+       
+        <More fav={fav}></More> 
+        {fav.map((book, index) => (
+  <div className='text-sm' key={book.bookId}>
+    {`${index + 1}. ${book.bookName}`}
+  </div>
+))}
+
       </div>
 
    
