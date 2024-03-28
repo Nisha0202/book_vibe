@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams, Route, Routes } from 'react-router-dom';
 import { getStoredData } from '../components/utility/saveDataLocal';
+import{getWishlistStoredData} from '../components/utility/saveWishlistDataLocal';
 import { NavLink } from 'react-router-dom';
 import Read from '../components/Read';
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -9,10 +10,10 @@ import Wishlist from '../components/Wishlist';
 
 export default function Bookmark() {
   const [fav, setFav] = useState([]);
+  const [wish, setWish] = useState([]);
   const [display, setDisplay] = useState([]);
 
   const data = useLoaderData();
-  const { id } = useParams();
 
   // 'books' is a property of 'data'
   const { books } = data;
@@ -25,6 +26,15 @@ export default function Bookmark() {
     setFav(applied);
     setDisplay(applied);
   }, [books]);
+
+  useEffect(() => {
+    const storedFav = getWishlistStoredData();
+    const storedFavIds = storedFav.map(id => parseInt(id, 10));
+    const applied = books.filter(book => storedFavIds.includes(book.bookId));
+    setWish(applied);
+    setDisplay(applied);
+  }, [books]);
+
 
 
 
@@ -60,7 +70,7 @@ export default function Bookmark() {
       <div className='view'>
         <Routes>
         <Route path="read" element={<Read fav={fav} />} />
-          <Route path="wishlist" element={<Wishlist />} />
+          <Route path="wishlist" element={<Wishlist wish={wish} />} />
         </Routes>
       </div>
 

@@ -5,28 +5,27 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useLoaderData, useParams } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify';
 import { saveDataLocal } from './utility/saveDataLocal';
-
+import { saveWishlistDataLocal } from './utility/saveWishlistDataLocal';
 
 export default function CardDetails() {
-
   const data = useLoaderData();
   const { id } = useParams();
 
   // 'books' is a property of 'data'
   const { books } = data;
 
-
   const book = books.find(book => book.bookId === parseInt(id));
-
-
   const [isClicked, setIsClicked] = useState(false);
+  const [isWishClicked, setWishIsClicked] = useState(false);
+
 
   const handleAdd = () => {
-
-    saveDataLocal(id);
+   
     if (!isClicked) {
+       saveDataLocal(id);
       setIsClicked(true);
-      toast('Added to read!', {
+      setWishIsClicked(true);
+      toast('Added to Read!', {
         position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
@@ -41,6 +40,55 @@ export default function CardDetails() {
     }
   };
 
+  const handleWishlist = () => {
+  
+    if (!isClicked) {
+      if(!isWishClicked){
+        saveWishlistDataLocal(id);
+      setWishIsClicked(true);
+      toast('Added to Wishlist!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        progress: true,
+        style: {
+          padding: '10px',
+          background: 'rgb(79 70 229)',
+          color: '#fff'
+        }
+      });
+      }else{
+        toast('Already added to Wishlist!', {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          progress: true,
+          style: {
+            padding: '10px',
+            background: 'rgb(79 70 229)',
+            color: '#fff'
+          }
+        });
+      }
+    }
+    else if(isClicked === true){
+      toast('Already Added to Read!', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        progress: true,
+        style: {
+          padding: '10px',
+          background: '#DC143C',
+          color: '#fff'
+        }
+      });
+    }
+ };
+  
 
   return (
     <div className=' my-4 px-2 lg:px-0'>
@@ -52,8 +100,6 @@ export default function CardDetails() {
 
         {/* details */}
         <div className='w-full'>
-
-
           <div className="flex flex-col w-full gap-2">
             <h1 className=' playful md:text-4xl text-xl font-bold text-black'>{book.bookName}</h1>
             <div className='flex flex-col gap-4'>
@@ -87,29 +133,21 @@ export default function CardDetails() {
                   </tr>
                 </tbody>
               </table>
-
-
             </div>
 
 
             {/* read */}
-            <div className='flex items-center mt-2'>
+            <div className='flex items-center mt-2 gap-4'>
               <button className='btn btn-outline' onClick={handleAdd}>
                 {isClicked ? 'Already Read' : 'Read'}
+              </button>
+              <button className='btn bg-blue-500 text-white' onClick={handleWishlist}>
+                {isWishClicked ? 'Added to Wishlist' : 'Wishlist'}
               </button>
             </div>
           </div>
         </div>
-
-
-
-
-
-        {/* <div className='cols-span-1 flex items-center '>
-          <button className='btn text-white bg-indigo-600' onClick={handleAdd}>
-            {isClicked ? 'Added to favourite' : 'Add to favourite'}
-          </button>
-        </div> */}
+ 
       </div>
       <div className='relative index-z-999'><ToastContainer /></div>
 

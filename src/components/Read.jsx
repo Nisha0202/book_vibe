@@ -9,7 +9,7 @@ export default function Read({ fav }) {
       {fav.map(book => <div className='mt-2 flex flex-col lg:flex-row  gap-4 lg:gap-8 border-2 lg:p-6 p-4 rounded-2xl' key={book.bookId}>
 
         <div className='image '>
-          <img src={book.image} className='w-56 h-56 rounded-xl'></img>
+          <img src={book.image} className='w-56 h-60 rounded-xl'></img>
         </div>
 
 
