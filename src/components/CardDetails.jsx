@@ -142,7 +142,7 @@ export default function CardDetails() {
                 {isClicked ? 'Already Read' : 'Read'}
               </button>
               <button className='btn bg-blue-500 text-white' onClick={handleWishlist}>
-                {isWishClicked ? 'Added to Wishlist' : 'Wishlist'}
+                Wishlist
               </button>
             </div>
           </div>

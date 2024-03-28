@@ -1,4 +1,4 @@
-Live link -
+Live link - https://66059eff90f50d37a47fab8e--bucolic-dieffenbachia-6d7451.netlify.app/book_details/5
 
 github- https://github.com/programming-hero-web-course-4/b9a8-book-vibe-Nisha0202
 
