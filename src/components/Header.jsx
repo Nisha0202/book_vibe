@@ -8,7 +8,8 @@ export default function () {
         <li><NavLink to='/bookmark/read'  className={({ isActive }) => (isActive ? "link-active" : "link")}>Listed Books</NavLink></li>
         <li><NavLink to='/pages' className={({ isActive }) => (isActive ? "link-active" : "link")}>Pages to Read</NavLink></li>
         <li><NavLink to='/about' className={({ isActive }) => (isActive ? "link-active" : "link")}>About</NavLink></li>
-        <li><NavLink to='/more' className={({ isActive }) => (isActive ? "link-active" : "link")}>More</NavLink></li>
+        {/* <li><NavLink to='/more' className={({ isActive }) => (isActive ? "link-active" : "link")}>More</NavLink></li> */}
+        <li><NavLink to='/contact' className={({ isActive }) => (isActive ? "link-active" : "link")}>Contacts</NavLink></li>
         
     </>
 
