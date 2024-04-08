@@ -16,6 +16,8 @@ import Wishlist from './components/Wishlist';
 import About from './pages/About';
 import More from './pages/More';
 import Contact from './pages/Contact'
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
 
 const router = createBrowserRouter([
   {
@@ -28,13 +30,18 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "/more",
-        element: <More/>,
+        path: "/contact",
+        element: <Contact/>,
         loader: ()=> fetch('../book.json')
       },
       {
-        path: "/contact",
-        element: <Contact/>,
+        path: "/signup",
+        element: <SignUp/>,
+        loader: ()=> fetch('../book.json')
+      },
+      {
+        path: "/signin",
+        element: <SignIn/>,
         loader: ()=> fetch('../book.json')
       },
       {

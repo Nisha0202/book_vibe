@@ -26,8 +26,8 @@ export default function () {
             </div>
             <div className='md:flex hidden'>
                 <ul className="p-2 md:flex gap-4">
-                    <button className='btn py-1 bg-emerald-500  text-white'>Sign In</button>
-                    <button className='btn py-1 bg-blue-500 text-white'>Sign Up</button>
+                    <NavLink to="/signin"  className='btn py-1 bg-emerald-500  text-white'>Sign In</NavLink>
+                    <NavLink to="/signup" className='btn py-1 bg-blue-500 text-white'>Sign Up</NavLink>
                 </ul>
             </div>
 
