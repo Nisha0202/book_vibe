@@ -14,7 +14,6 @@ import Bookmark from './pages/Bookmark';
 import Read from './components/Read';
 import Wishlist from './components/Wishlist';
 import About from './pages/About';
-import More from './pages/More';
 import Contact from './pages/Contact'
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
